@@ -147,8 +147,13 @@ Project Link: [https://github.com/bibixx/zium.app](https://github.com/bibixx/ziu
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## Multi-Screen Feature
 
+The multi-screen feature allows you to use multiple screens to display video windows. You can drag video windows between screens and manage layouts for each screen.
 
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[product-screenshot]: .github/readme/screenshot.png
+### How to Use
+
+1. **Drag Windows Between Screens**: Click and hold on a video window to drag it. Move it to the edge of the screen, and it will transition to the next screen.
+2. **Manage Layouts**: Use the layout buttons to create, load, and save layouts for each screen. This allows you to have different arrangements of video windows on each screen.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>

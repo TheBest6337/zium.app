@@ -84,6 +84,22 @@ export const Player = ({
     preventHiding(isPaused || isDragging);
   }, [isPaused, preventHiding, isDragging]);
 
+  // Add logic to detect connected screens and manage video windows across screens
+  const [screens, setScreens] = useState<Screen[]>([]);
+
+  useEffect(() => {
+    const updateScreens = () => {
+      setScreens(Array.from(window.screen));
+    };
+
+    window.addEventListener("resize", updateScreens);
+    updateScreens();
+
+    return () => {
+      window.removeEventListener("resize", updateScreens);
+    };
+  }, []);
+
   return (
     <>
       {isDragging && <div className={styles.grabbingWrapper} />}
